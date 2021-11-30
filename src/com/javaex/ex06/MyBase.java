@@ -9,7 +9,7 @@ public class MyBase extends Base{
             day();
         }
         else if(state.equals("밤")){
-            night();
+            super.night();
         }
         else if(state.equals("오후")) {
         	afternoon();
@@ -18,10 +18,6 @@ public class MyBase extends Base{
 	
 	public void day() {
         System.out.println("낮에는 열심히 수업 듣자");
-    }
-
-    public void night() {
-    	System.out.println("밤에는 숙면");
     }
 
     public void afternoon() {
